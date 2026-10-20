@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flask-microservices-event-bus"
+version = "1.0.0"
+authors = [{ name = "Felipe Madison", email = "160553421+FelipeMadson@users.noreply.github.com" }]
+description = "High-throughput modular microservice event bus and webhook dispatching router in Python and Flask 3"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "Flask>=3.0.0",
+    "pydantic>=2.7.0"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.0.0"
+]
